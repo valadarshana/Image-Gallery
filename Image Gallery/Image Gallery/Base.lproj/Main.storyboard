@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Image_Gallery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forest" translatesAutoresizingMaskIntoConstraints="NO" id="Nwj-bV-C9t">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FQg-ib-kZZ">
+                                <rect key="frame" x="0.0" y="796" width="414" height="80"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="NTr-0A-8ti">
+                                        <rect key="frame" x="16" y="0.0" width="382" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EhL-jV-7C6">
+                                                <rect key="frame" x="0.0" y="0.0" width="83.5" height="80"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="left-arrow"/>
+                                                <connections>
+                                                    <action selector="btnPrevClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xpu-2g-DL2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nK9-0g-hKx">
+                                                <rect key="frame" x="99.5" y="0.0" width="83.5" height="80"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" red="0.98823529409999999" green="0.050980392159999999" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" image="heartempty"/>
+                                                <connections>
+                                                    <action selector="btnFavClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qcO-Kq-AuU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEd-5p-ljX">
+                                                <rect key="frame" x="199" y="0.0" width="83.5" height="80"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="right-arrow"/>
+                                                <connections>
+                                                    <action selector="btnNectClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yUl-IM-iZD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxP-jj-pxi">
+                                                <rect key="frame" x="298.5" y="0.0" width="83.5" height="80"/>
+                                                <color key="backgroundColor" red="0.28025132419999998" green="0.69198763370000005" blue="0.29347819089999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" image="photo"/>
+                                                <connections>
+                                                    <action selector="btnUploadClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dQg-7g-3CC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.20231213872832363" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="NTr-0A-8ti" secondAttribute="trailing" constant="16" id="89p-4c-oh5"/>
+                                    <constraint firstAttribute="height" constant="80" id="DZa-Rh-TeR"/>
+                                    <constraint firstItem="NTr-0A-8ti" firstAttribute="top" secondItem="FQg-ib-kZZ" secondAttribute="top" id="Gpt-z5-9uj"/>
+                                    <constraint firstAttribute="bottom" secondItem="NTr-0A-8ti" secondAttribute="bottom" id="jO2-zO-euM"/>
+                                    <constraint firstItem="NTr-0A-8ti" firstAttribute="leading" secondItem="FQg-ib-kZZ" secondAttribute="leading" constant="16" id="wAH-3R-Tw8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Nwj-bV-C9t" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Blp-Se-qs2"/>
+                            <constraint firstAttribute="bottom" secondItem="Nwj-bV-C9t" secondAttribute="bottom" id="Mv1-SC-15w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FQg-ib-kZZ" secondAttribute="trailing" id="Nje-lf-I89"/>
+                            <constraint firstItem="FQg-ib-kZZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Sji-Da-hdU"/>
+                            <constraint firstItem="Nwj-bV-C9t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="b8N-Ub-GEt"/>
+                            <constraint firstAttribute="bottom" secondItem="FQg-ib-kZZ" secondAttribute="bottom" constant="20" id="bXN-Kz-tKQ"/>
+                            <constraint firstItem="Nwj-bV-C9t" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dI8-Wg-8lw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btn_heart" destination="nK9-0g-hKx" id="bDk-Fd-ahy"/>
+                        <outlet property="imgGallery" destination="Nwj-bV-C9t" id="Q9D-Eb-WLv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="forest" width="1080" height="1920"/>
+        <image name="heartempty" width="64" height="64"/>
+        <image name="left-arrow" width="64" height="64"/>
+        <image name="photo" width="64" height="64"/>
+        <image name="right-arrow" width="64" height="64"/>
+    </resources>
+</document>
