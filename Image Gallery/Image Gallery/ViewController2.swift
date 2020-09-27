@@ -30,34 +30,26 @@ class ViewController2: UIViewController {
         
         if count > 0{
             count -= 1
-            setImage()
+             imgGallery.image=img_arr[count]
         }
         
         
     }
+    
+    @IBAction func btnNectClick(_ sender: Any) {
+           if count < img_arr.count-1{
+               count += 1
+                 imgGallery.image=img_arr[count]
+           }
+           
+       }
     
     @IBAction func btnFavClick(_ sender: Any) {
         
         
     }
     
-    @IBAction func btnNectClick(_ sender: Any) {
-        if count < img_arr.count-1{
-            count += 1
-            setImage()
-        }
-        
-    }
-    
-    
-    func setImage(){
-        
-        if count >= 0 && count <= img_arr.count-1{
-            imgGallery.image=img_arr[count]
-        }
-        
-    }
-    
+   
     
 }
 
