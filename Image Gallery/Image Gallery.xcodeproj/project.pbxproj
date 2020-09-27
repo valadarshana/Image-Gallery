@@ -15,6 +15,7 @@
 		042D573A251EF49000C09188 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042D5738251EF49000C09188 /* LaunchScreen.storyboard */; };
 		042D5745251EF49100C09188 /* Image_GalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D5744251EF49100C09188 /* Image_GalleryTests.swift */; };
 		042D5750251EF49100C09188 /* Image_GalleryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D574F251EF49100C09188 /* Image_GalleryUITests.swift */; };
+		045047E02520CC3900157264 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045047DF2520CC3900157264 /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		042D574B251EF49100C09188 /* Image GalleryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Image GalleryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		042D574F251EF49100C09188 /* Image_GalleryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image_GalleryUITests.swift; sourceTree = "<group>"; };
 		042D5751251EF49100C09188 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045047DF2520CC3900157264 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				042D5736251EF49000C09188 /* Assets.xcassets */,
 				042D5738251EF49000C09188 /* LaunchScreen.storyboard */,
 				042D573B251EF49000C09188 /* Info.plist */,
+				045047DF2520CC3900157264 /* ViewController2.swift */,
 			);
 			path = "Image Gallery";
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				042D5732251EF48F00C09188 /* ViewController.swift in Sources */,
+				045047E02520CC3900157264 /* ViewController2.swift in Sources */,
 				042D572E251EF48F00C09188 /* AppDelegate.swift in Sources */,
 				042D5730251EF48F00C09188 /* SceneDelegate.swift in Sources */,
 			);
