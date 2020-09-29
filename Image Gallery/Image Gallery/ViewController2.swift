@@ -24,10 +24,35 @@ class ViewController2: UIViewController,UIImagePickerControllerDelegate,UINaviga
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let leftswiper = UISwipeGestureRecognizer(target: self, action: #selector(handleswipes (_:)))
+        let rightswiper = UISwipeGestureRecognizer(target: self, action: #selector(handleswipes (_:)))
+        leftswiper.direction = .left
+        rightswiper.direction = .right
+        view.addGestureRecognizer(leftswiper)
+        view.addGestureRecognizer(rightswiper)
+        
         imagePicker.delegate = self
         imgGallery.image=(dict_img.first!["Image"]as! UIImage)
     }
-    
+    @objc func handleswipes(_ sender:UISwipeGestureRecognizer)
+    {
+        if sender.direction == .left
+        {
+            if count < dict_img.count-1{
+                count += 1
+                 setimg()
+            }
+            
+
+        }
+        if sender.direction == .right
+        {
+            if count > 0{
+                count -= 1
+                 setimg()
+            }
+        }
+    }
     @IBAction func btnUploadClick(_ sender: Any) {
         
         self.present(imagePicker, animated: true, completion: nil)
